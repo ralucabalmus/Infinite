@@ -1,8 +1,9 @@
 body{
-	
+	background-color: #35363A !important;
 }
-
-/*Navigation menu */
+#main{
+	color: #fff;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -10,7 +11,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color: #37383C;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -29,7 +30,8 @@ body{
 }
 
 .sidenav a:hover, .sidenav a:focus .offcanvas a:focus{
-	color: #fff;
+	color: #ffd09d;
+	text-decoration: none;
 }
 
 .sidenav .closebtn {
@@ -61,13 +63,20 @@ body{
     font-size: 25px;
     margin: 0;
 	transition: 0.3s;
+	color: #ffd09d;
 }
 .#sidebar-menu-footer i{
 	padding: 8px 8px 8px 32px;
 }
 #main {
     transition: margin-left .5s;
-    padding: 20px;
+    padding: 5px 10px;
+    position: fixed;
+    right: 20px;
+	top: 10px;
+	border: 1px solid #888;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
 }
 #main:hover{
 	cursor: pointer;
@@ -76,4 +85,51 @@ body{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+.closebtn{
+	padding: 0px;
+    margin-left: 0px !important;
+	font-size: 30px;
+}
+.closebtn:before{
+	font-family: FontAwesome;
+	content: "\f00d";
+}
+.closebtn:hover{
+	text-decoration: none;
+	font-size:40px;
+	transition: 0.3s;
+}
+#main-logo .logo{
+    margin: 20px auto;
+    background: url(../images/infinite_white.png) no-repeat 0 0;
+    background-size: 180px;
+    height: 100px;
+    width: 180px;
+    margin-bottom: -20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+h1 {
+    position: absolute;
+    width: 100%;
+    font-weight: normal;
+    font-family: 'regular';
+    font-style: normal;
+    font-size: 8px;
+    letter-spacing: 8px;
+    color: #fff !important;
+    margin: 0;
+    z-index: 1;
+}
+.content-first{
+	background: url('../images/future.jpg') no-repeat 0 0;
+	background-size: 100%;
+	height: 526px;
+}
+.content-second{
+	background-color: #ffd09d;
+	height: 526px;
 }

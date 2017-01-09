@@ -8,3 +8,12 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+window.onscroll = function () {
+    console.log(window.pageYOffset);
+    var nav = document.getElementById('main');
+    if ( window.pageYOffset > 100 ) {
+        nav.classList.add("main1");
+    } else {
+        nav.classList.remove("main1");
+    }
+}
