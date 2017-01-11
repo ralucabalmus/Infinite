@@ -5,8 +5,11 @@
 <title>Infinite</title>
 <link rel="stylesheet" type="text/css" href="../Infinite/style/style.css">
 <link rel="stylesheet" type="text/css" href="../Infinite/style/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../Infinite/style/animate.css">
 <link rel="stylesheet" href="../Infinite/font-awesome/css/font-awesome.min.css">
 <script src="../Infinite/script/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/path/to/parallax.js"></script>
 </head>
 
 <body>
@@ -31,12 +34,33 @@
 </nav>
 
 <section>
-<div id="main">
-<span onclick="openNav()">☰ Menu</span>
-</div>
-<div class="content-first"></div>
-<div class="content-second"></div>
-<div class="content-third"></div>
+	<div id="main">
+		<span onclick="openNav()">☰ Menu</span>
+	</div>
+	<div class="content-first"><img src="./images/future.jpg"></div>
+	<div class="content-second" id="second-content">
+		<div>
+			<div class="logo"></div>
+			<div>
+				<p>Lorem ipsum dolor sit amet, pro tota malis quaerendum cu, ut possim mediocritatem eos, eos feugiat cotidieque at.<br> Mea in illud malis accommodare. Constituam scribentur contentiones id per, ei elitr possim oblique ius, id iusto quando exerci eos.<br>Ad viris nostro animal per, no duo magna antiopam. Quo cu modo vero.
+
+				Et dolorum habemus eleifend vim, has dicant veritus facilisis no, ad nam iusto putant. <br>Sit impetus accusam accommodare an, eu dicant scripserit mel, pro ut liber recteque ullamcorper. Ut cum harum nullam principes. <br>Ne oporteat deterruisset duo, in nullam volutpat gloriatur est, per suas tincidunt cu.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-third" id="third-content">
+		<div>
+			<div class="square-wrapper inner-right">
+				<div class="square-border right"></div>
+				<div id="container">I AM A TAB</div>
+			</div>
+			<div class="square-wrapper inner-left">
+				<div class="square-border left"></div>
+				<div id="container">I AM A TAB</div>
+			</div>
+		</div>
+	</div>
 </section>
 <footer></footer>
 

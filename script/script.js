@@ -10,10 +10,10 @@ function closeNav() {
 }
 window.onscroll = function () {
     console.log(window.pageYOffset);
-    var nav = document.getElementById('main');
+    var nav = document.getElementById('second-content');
     if ( window.pageYOffset > 100 ) {
-        nav.classList.add("main1");
+        nav.classList.add("upContent");
     } else {
-        nav.classList.remove("main1");
+        nav.classList.remove("upContent");
     }
 }
