@@ -18,6 +18,7 @@ window.onscroll = function () {
     var firstNav = document.getElementById('second-content');
 	var secondNav = document.getElementById('third-content');
 	var thirdNav = document.getElementById('fourth-content');
+	var fourthdNav = document.getElementById('fifth-content');
 	
 	var removeClass = [ firstNav, secondNav];
     if ( window.pageYOffset > 50) {
@@ -26,14 +27,20 @@ window.onscroll = function () {
 	else{
 		firstNav.classList.remove("upContent");
   }
-	if ( window.pageYOffset > 200 ) {
+	if ( window.pageYOffset > 250 ) {
         secondNav.classList.add("upContent");
     }
 	else{
         secondNav.classList.remove("upContent");
     }
-	if ( window.pageYOffset > 500 ) {
+	if ( window.pageYOffset > 550 ) {
         thirdNav.classList.add("upContent");
+    }
+	else{
+        thirdNav.classList.remove("upContent");
+    }
+	if ( window.pageYOffset > 850 ) {
+        fourthNav.classList.add("upContent");
     }
 	else{
         thirdNav.classList.remove("upContent");
