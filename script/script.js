@@ -1,12 +1,17 @@
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
+	document.getElementById("mySidenavContact").style.width = "100%";
 }
-
+function openContactNav() {
+	document.getElementById("mySidenavContact").style.width = "100%";
+}
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+}
+function closeContactNav() {
+    document.getElementById("mySidenavContact").style.width = "0";
 }
 function pageScroll() {
 	window.scrollTo(0,0); 
@@ -21,7 +26,7 @@ window.onscroll = function () {
 	var fourthdNav = document.getElementById('fifth-content');
 	
 	var removeClass = [ firstNav, secondNav];
-    if ( window.pageYOffset > 50) {
+    if (screen.width > 1024 & window.pageYOffset > 50) {
         firstNav.classList.add("upContent");
     }
 	else{
